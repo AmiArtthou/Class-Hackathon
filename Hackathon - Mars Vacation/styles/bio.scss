@@ -1,0 +1,979 @@
+@use "partials/variables" as *;
+@use "partials/mixins" as *;
+
+.div__Photo-Gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mars__Button {
+    font-size: 2rem;
+    background-color: pink;
+   color: green;
+   padding: 1rem;
+   border: none;
+   border-radius: 2rem;
+    
+}
+
+body {
+color: #323232;
+    font-family: "Avenir";
+    font-weight: 600;
+    background-color: #000000;
+    margin: auto;
+    padding: 2rem;
+  
+    @include tablet {
+        margin: auto 2rem auto 2rem;
+       
+    }
+    @include desktop {
+        margin: auto auto auto auto;
+    }
+
+}
+
+
+
+.div__whiteBackground {
+    background-color: #FFFFFF;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    overflow-wrap: break-word;
+    border-top: 0.0625rem solid #E1E1E1;
+    border-bottom: 0.0625rem solid #E1E1E1;
+   
+width: 100%;
+height: 20vh;
+
+    background-color: #323232;
+ position: relative;
+
+ top:0;
+ z-index: 10000;
+ vertical-align: middle;
+
+ color: #CDCBCA;
+
+ padding: 0;
+ margin-bottom: -7rem;
+
+}
+
+.logo__Bandsite {
+    justify-content: center;
+    top: -9.5rem;
+    margin: 9rem 2rem 0 14rem;
+    position: absolute;
+    display: flex; 
+    flex-direction: row;
+    align-content: center;
+    align-self: center;
+
+    justify-content: center;
+    height: 17vh;
+    width: 20vw;
+
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+       
+        
+
+     top: -1rem;
+   
+        margin: initial;
+        margin-top: 0.5rem;
+        height: 60vh;
+    width: 60vw; 
+    margin-left: -8rem;
+    }
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+
+     top: 1.5rem;
+     left: 6rem;
+        margin: initial;
+        margin-top: 0;
+        height: 35vh;
+    width: 35vw; 
+    }
+
+}
+
+.logo__Bandsite--Image {
+
+    @include tablet {
+        width: 15vw;
+        height: 20vh;
+        margin-top: -0.5rem;
+    }
+
+    @include desktop {
+        margin-left: -15rem;
+        width: 10vw;
+        height: 20vh;
+        margin-top: -2.5rem;
+    }
+}
+
+
+
+ul {
+    display: flex;
+    overflow-wrap: break-word;
+    overflow-wrap: break-word;
+
+   list-style-type: none; 
+   text-decoration: none;
+ 
+   display: flex;
+ 
+   color: #E1E1E1;
+ 
+}
+
+li {
+    display: flex;
+    overflow-wrap: break-word;
+   margin: 0rem 5rem 0rem 5rem;
+    font-size: 1.3rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+    color: #E1E1E1;
+   
+
+    @include tablet {
+        flex-direction: row;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 400;
+        color: #E1E1E1;
+    }
+    @include desktop {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 400;
+        color: #E1E1E1;
+    }
+
+}
+
+.nav__item--Biography {
+    color: #CDCBCA;
+    display: flex; 
+    flex-direction: row;
+    text-decoration: none;
+    margin-left: -2rem;
+    margin-top: 4rem;
+    position: absolute;
+ 
+
+
+    @include tablet {
+        font-size: 1.3rem;
+        margin-left: 15rem;
+        top: -1rem;
+    }
+    @include desktop {
+       
+    }
+
+}
+
+.nav__item--Shows {
+    color: #CDCBCA;
+    display: flex; 
+    flex-direction: row;
+    position: absolute; 
+    margin-top: 4rem;
+    right: 7rem;
+    top: 1rem;
+
+    @include tablet {
+        font-size: 1.3rem;
+        left: 35rem;
+        top: -0.95rem;
+       
+    }
+    @include desktop {
+        
+    
+ 
+ }
+}
+
+.nav__item--Biography:hover {
+  
+ 
+      border-bottom: 0.3rem solid white;
+ 
+      padding-bottom: 1.5rem;
+      padding-right: 9rem;
+      padding-left: 5rem;
+     
+  
+      color: white;
+      font-weight: bold;
+     
+      left: 2rem;
+  
+    
+       @include tablet {
+        padding: initial;
+      left: initial;
+        border-bottom: 0.3rem solid white;
+   
+        padding-bottom: 3.3rem;
+     
+     
+    
+        color: white;
+        font-weight: bold;
+    
+       
+  
+       }
+    
+       @include desktop {
+          padding: initial;
+          padding-bottom: 3.3rem;
+       }
+    
+    }
+  
+
+
+
+ .nav__item--Shows:hover {
+    
+    border-bottom: 0.3rem solid white;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+    padding-right: 7rem;
+    padding-left: 9rem;
+    right: 0.01rem;
+
+
+    @include tablet {
+        padding: initial;
+        border-bottom: 0.3rem solid white;
+        color: white;
+        font-weight: bold;
+        padding-bottom: 3.3rem;
+        
+  
+        right: initial;
+       }
+    
+       @include desktop {
+        padding: initial;
+        padding-bottom: 3.3rem;
+       }
+ }
+
+
+.div__backgroundImage {
+  
+    margin-top: 7rem;
+    background-color: #323232;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+ 
+
+
+    @include tablet {
+      
+        width: 100%;
+        height: 100vh;
+        height: 35rem;
+        background-position: 50% 5%;
+    }
+    @include desktop {
+    
+        width: 100%;
+        max-height: 100%;
+        height: 43rem;
+        background-position: 50% 5%;
+    }
+}
+
+.backgroundImage__Image {
+    
+
+    display: flex;
+    
+        position: relative;
+    background-image: url(../assets/images/mars-sunset1.webp);
+
+   opacity: 40%;
+  
+  
+    background-size: cover;
+    background-position: center;
+  
+    width: 100vw;
+    height: 45vh;
+    background-position: 50% 5%;
+   
+
+    @include tablet {
+      
+        width: 100%;
+        height: 100vh;
+        height: 35rem;
+        background-position: 50% 5%;
+    }
+    @include desktop {
+    
+        width: 100%;
+        max-height: 100%;
+        height: 43rem;
+        background-position: 50% 5%;
+    }
+}
+
+.div__h1--bandName {
+   font-weight: 700;
+   
+    color: #FAFAFA;
+    position: absolute;
+    
+
+   top: 35%;
+  left: 10%;
+
+    display: inline-block;
+
+ width: 100%;
+text-align: left;
+ 
+ 
+    font-size: 2.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    
+
+    @include tablet {
+        font-weight: 700;
+        font-size: 3.75rem;
+        line-height: 4.25rem;
+        font-weight: 700;
+        top: 34%;
+        left: 10%;
+    }
+    @include desktop {
+        font-weight: 700;
+        font-size: 3.75rem;
+        line-height: 4.25rem;
+        font-weight: 700;
+       
+    }
+}
+
+
+
+.div__About {
+    padding: 1rem;
+    padding-top: 3rem;
+    font-size: 2.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+
+  
+
+
+    @include tablet {
+        padding-left: 2rem;
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+        font-weight: 700;
+    }
+    @include desktop {
+        padding-left: 1rem;
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+        font-weight: 700;
+        letter-spacing: 0.05rem;
+    }
+
+    }
+
+    .img__Band {
+padding: 1rem;
+    
+      
+        width: 70%;
+        height: 60%;
+   
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+       
+        margin-left: auto;
+        margin-right: auto;
+
+        @include tablet {
+        width: 70%;
+        height: 60%;
+        justify-content: center;
+        align-items: center;
+        align-content: center; 
+        place-content: center;
+        justify-content: space-evenly;
+
+        }
+        @include desktop {
+            margin-top: -1.4rem;
+            width: 70%;
+            height: 60%;
+            justify-content: center;
+            align-items: center;
+            align-content: center; 
+            place-content: center;
+            justify-content: space-evenly;
+        }
+        
+        
+        
+    }
+
+    .h2__p {
+        padding: 1rem;
+       font-weight: 600;
+        font-size: 1.5rem;
+    line-height: 2.3rem;
+    font-weight: 600;
+
+
+    @include tablet {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 600;
+    }
+    @include desktop {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 600;
+        padding-left: 12rem;
+        padding-right: 18rem;
+    }
+    }
+
+    .h2__Bryan {
+        padding: 1rem;
+   margin-top: -1rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+    line-height: 2.3rem;
+    font-weight: 600;
+
+
+    @include tablet {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 600;
+    }
+    @include desktop {
+        margin-top: -3rem;
+        font-size: 1rem;
+        line-height: 2rem;
+        font-weight: 500;
+        padding-left: 12rem;
+        
+    }
+    }
+
+        
+
+.div__TheBeesKnees {
+    
+    padding: 1rem;
+    font-family: "Avenir";
+    margin-top: 4rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+    line-height: 1.375rem;
+    font-weight: 600;
+
+
+    @include tablet {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 600;
+    }
+    @include desktop {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 600;
+        padding-left: 12rem;
+    }
+    
+}
+
+
+
+   
+  
+.p__TheBeesKnees {
+   padding: 1rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 400;
+
+    @include tablet {
+        font-size: 1rem;
+        line-height: 1.375rem;
+        font-weight: 400;
+    }
+    @include desktop {
+        margin-top: -1.5rem;
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        font-weight: 400;
+        padding-left: 12rem;
+    }
+   
+  
+}
+
+.p__TheBeesKnees-2 {
+    
+    padding: 1rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 400;
+
+    @include tablet {
+        font-size: 1rem;
+        line-height: 1.375rem;
+        font-weight: 400;
+    }
+    @include desktop {
+        margin-top: -1.5rem;
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        font-weight: 400;
+        padding-right: 12rem;
+    }
+}
+
+.div__p--TheBeesKnees {
+    @include tablet {
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        font-weight: 400;
+         display: flex; 
+    flex-direction: row; 
+    }
+    @include desktop {
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        font-weight: 400;
+    }
+   
+
+}
+
+
+.div__Photo-Gallery {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    background: #FAFAFA;
+    width: 100%;
+}
+
+h2 {
+    
+    font-weight: 600;
+    font-size: 2.5rem;
+
+    @include tablet {
+padding-left: 2rem;
+    }
+
+    @include desktop {
+        margin-left: 5rem;
+    }
+}
+
+.div__PhotoGallery--Items {
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+   @include tablet {
+align-items: center;
+justify-content: center;
+   }
+   @include desktop {
+    margin-left: 6rem;
+    margin-right: 6rem; 
+   } 
+}
+
+
+
+img {
+    width: 95%;
+    height: 100%;
+    padding: 1rem;
+
+    @include tablet {
+        width: 27%;
+        height: 29%;
+        justify-content: center;
+      
+    }
+    @include desktop {
+        width: 30%;
+    height: 30%;
+    justify-content: center;
+    }  
+}
+
+
+//comment section 
+
+.h2_Comment-Section {
+    color: #FAFAFA;
+}
+
+
+
+
+//footer
+
+.img__Faceboook, .Important {
+    width: 5.5vw;
+    height: 5.5vh;
+ 
+
+    @include tablet {
+        width: 5vw;
+    height: 5vh;
+    }
+    @include desktop {
+        width: 5vw;
+        height: 5vh;
+    }
+} 
+
+.img__Twitter {
+    width: 7vw;
+    height: 7vh;
+
+    @include tablet {
+        width: 4vw;
+    height: 4vh;
+    margin-top: 0.2rem;
+  
+    }
+    @include desktop {
+        width: 4.5vw;
+        height: 4.5vh;
+        margin-top: 0.2rem;
+    }
+} 
+
+.img__Instagram {
+    width: 6vw;
+    height: 6vh;
+
+    @include tablet {
+        width: 5vw;
+    height: 5vh;
+    }
+    @include desktop {
+        width: 5vw;
+        height: 5vh;
+    }
+} 
+
+
+
+
+
+
+.footer__div--Contacts > * {
+    padding: 2rem;
+
+    @include tablet {
+        padding: 0.8rem;
+       
+    }
+
+    @include desktop {
+        padding: 2rem;
+    }
+}
+
+.footer__div--Contacts {
+  
+    
+
+       @include tablet {
+       
+            display: flex;
+        flex-direction: row;
+            justify-content: space-between; 
+            align-items: center; 
+    
+            flex-wrap: wrap;
+            justify-content: flex-start;
+              
+            
+        }
+         @include desktop {
+        display: flex;
+        flex-direction: row;
+            justify-content: space-between; 
+            align-items: center;  
+        }
+    
+        
+    
+
+}
+
+footer {
+position: relative;
+padding: 1rem;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between; 
+align-items: center;
+
+    
+color: #FAFAFA;
+background-color: #323232;
+font-size: 0.8125rem;
+line-height: 1.125rem;
+font-weight: 400;
+
+@include tablet {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+        
+    }
+    @include desktop {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 400;
+    }
+}
+
+.footer__div--Social {
+
+    @include tablet {
+      
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1rem;
+    }
+
+    @include desktop {
+        margin-left: -6rem;
+    }
+
+}
+
+
+
+
+.footer__div--Social-Header {
+
+
+padding-top: 3rem;
+    font-weight: 600;
+    font-size: 2.7rem;
+    line-height: 2rem;
+    font-weight: 700;
+
+
+    @include tablet {
+        display: flex;
+        font-size: 3.3rem;
+    
+        line-height: 2.75rem;
+        font-weight: 700;
+    }
+    @include desktop {
+        display: flex;
+        font-size: 2.7rem;
+        line-height: 2.75rem;
+        font-weight: 700;
+    }
+}
+
+.footer__div--Socials {
+    @include tablet {
+        margin-top: 5rem;
+        display: flex;
+    }
+
+    @include desktop {
+    margin-top: 4rem;
+    }
+}
+
+
+
+.footer__div--Cam > * {
+    font-size: 1.5rem;
+}
+
+//bolded names in footer 
+
+.p__Footer--Cam {
+    font-weight: 600;
+}
+
+.p__Footer--Management {
+    font-weight: 600;
+}
+
+.p__Footer--Pearl {
+    font-weight: 600;
+}
+
+.p__Footer--Limitless {
+    font-weight: 600;
+}
+
+.p__Footer--Carson {
+    font-weight: 600;
+}
+
+.p__Footer--ARCH {
+    font-weight: 600;
+}
+
+
+
+.p__Footer--Management {
+    padding-bottom: 1rem;
+}
+
+.p__Footer--State {
+    padding-bottom: 1rem;
+}
+
+.p__Footer--Email-Cam {
+    padding-bottom: 1rem;
+}
+
+
+
+.footer__div--Pearl > * {
+    font-size: 1.5rem;
+}
+
+.p__Footer--Limitless {
+padding-bottom: 1rem;
+}
+
+.p__Footer--Country-Pearl {
+    padding-bottom: 1rem;
+}
+
+.p__Footer--Email-Pearl {
+    padding-bottom: 1rem;
+}
+
+.p__Footer--ARCH {
+    padding-bottom: 1rem;
+}
+
+.p__Footer--Country-Cam {
+    padding-bottom: 1rem;
+}
+
+.p__Footer--Email-Carson {
+    padding-bottom: 1rem;
+}
+
+
+
+
+.footer__div--Carson > * {
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+.footer__logo--BANDSITE-2 {
+
+    height: 20vh;
+    width: 20vw; 
+    padding: 0;  
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+
+
+
+    @include tablet {
+        position: absolute;
+        top: 4.2rem;
+        right: 3rem;
+        height: 17vh;
+        width: 17vw; 
+        
+    }
+
+    @include desktop {
+        position: absolute;
+         height: 12vh;
+         width: 12vw; 
+         top: 4rem;
+         
+    }
+}
+
+
+
+.footer__Copyright {
+    font-size: 1.2rem;
+    margin-top: -3rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+
+    @include tablet {
+    margin-top: 2rem;
+   
+    }
+
+    @include desktop {
+    }
+}
