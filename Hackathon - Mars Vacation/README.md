@@ -9,7 +9,7 @@ Ami
 Saisudan 
 
 #Instructions: 
-Click on 'Excursions' at the top, and scroll down to discover your pop culture inspired robo guide for your Mars tour. When you refresh the page, the randomized tour guide changes. 
+To start, open in Code Editor such as VSCode and launch the HTML file from Liveserver. Click on 'Excursions' at the top, and scroll down to discover your pop culture inspired robo guide for your Mars tour. When you refresh the page, the randomized tour guide changes. 
 Then, click on the pink 'check out the locales!' button, to generate pictures of Mars taken by the Mars Rover, rendered from the Mars Rover NASA API. Clicking the button randomizes a curated selection of photos. At the bottom you will see pop culture influenced staff members of the Mars Tour team. At the top, click on 'Booking' to book your tour. 
 
 #Challenges: 
